@@ -1,0 +1,95 @@
+/* 
+  Colors
+  Standard colors (e.g. blue, red, yellow). Full list can be found here: https://www.w3schools.com/tags/ref_colornames.asp
+  HEX - #000 #000000 both are black color (mostly used in frontend development)
+  RGB - rgb(0,0,0) (used less often than HEX)
+  RGBA - rgba(0,0,0,0.4) the last number is for opacity (transparency)
+  HSL & HSLA - the least used color
+
+  ! We do not mix different color types in the same project, only rgba is an exception and can be combined with other types when opacity is needed.
+ */
+ * {
+  box-sizing: border-box;
+ }
+
+ /* :root {
+  font-size: 14px;
+ } */
+
+ body {
+  background-color: #4B84FB;
+  color: #fff;
+  /* border: 1px solid #E2E5E9; */
+  margin: 0;
+ }
+
+label {
+  font-size: 1.2em;
+  line-height: 50px;
+  margin: 20px;
+  padding: 10px;
+  display: block;
+}
+
+ div, p {
+  /* border: 1px solid #E2E5E9;
+  height: 100px;
+  width: 100%;
+  margin: 20px;
+  padding: 10px; */
+ }
+
+ input {
+  width: 100px;
+  margin: 20px;
+ }
+
+ button {
+  margin: 20px;
+  min-width: 48px;
+  min-height: 14px;
+  max-width: 100%;
+ }
+
+ #box-model-div {
+  background-color: #ADD8E6;
+  /* padding: 50px; */
+  margin: 10px 15px 20px 30px;
+  /* padding: 10px 30px; - shorthand  */
+  padding: 10px 20px 40px;
+  border-radius: 10px 10px 0 0;
+  /* border: 5px #E2E5E9 solid; */
+  border-bottom: 5px #E2E5E9 solid;
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: #E2E5E9;
+  border-top: none;
+  border-left: none;
+  border-right: none; */
+ }
+
+ main {
+  background-color: #E2E5E9;
+  padding: 10px;
+ }
+
+ .example-content {
+  background-color: #4B84FB;
+  height: 100px;
+  margin: 10px auto;
+ }
+
+ .example-content:first-child {
+  margin-top: 0;
+ }
+ .example-content:last-child {
+  margin-bottom: 0;
+ }
+
+ img {
+  /* viewport width */
+  /* width: 50vw;  */
+  height: 50vh;
+ }
+
+

@@ -1,0 +1,38 @@
+/* This is external CSS file */
+/* 
+  Multi-line comment
+*/
+
+/* 
+Priority in CSS
+- Inline styles (styles added in HTML) have higher priority than styles added in head or in external files
+- Selector types that you use also change the priority
+- The most important setting is the one that comes the last (if you used the same selector)
+- '!important' - gives a style rule a higher priority (usually, it's highest priority) 
+- element selector > class selector > id selector
+*/
+
+* {
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.text-blue {
+  color: yellow;
+}
+
+p.text-blue {
+  color: green !important;
+}
+
+.text-blue {
+  color: violet;
+}
+
+img {
+  height: auto;
+  width: 400px;
+  /* Img element has display property set to block by default. That's why we can apply certain styles to it, e.g. height, width, margin, padding, etc. */
+  display: block;
+  /* object-fit: cover; */
+}

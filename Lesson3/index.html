@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div></div>
+  <span></span>
+
+<!-- Semantic elements -->
+  <header>
+    <nav>Navigation</nav>
+  </header>
+
+
+
+
+
+  <main>
+    <!-- Form methods (method attribute): GET ve POST -->
+    <form action="https://my-server/submit-form" method="get">
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" name="firstName" required>
+      <label for="lastName">First name</label>
+      <input type="text" id="lastName" name="lastName" >
+
+      <label for="isAdminUser">Is Admin user?</label>
+      <input type="checkbox" id="isAdminUser" name="is-admin-user" >
+
+      <!-- When using radio element, all radio inputs in the same group should have THE SAME NAME.  Value and id attributes of radio inputs should be different. -->
+      <label for="radio-1">Option 1</label>
+      <input type="radio" id="radio-1" name="radio-group" value="Option 1">
+      <label for="radio-2">Option 2</label>
+      <input type="radio" id="radio-2" name="radio-group" value="Option 2">
+
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your-email@domain.com">
+
+      <label for="account-number">Account number</label>
+      <!-- In HTML, we use value attribute if we want to set default value. The defaultValue attribute will be used later when we start using React. -->
+      <input type="text" id="account-number" name="account-number" value="SDA12131421">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password">
+      
+      <label for="password">You message</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+
+      <fieldset>
+        <legend>Legend label</legend>
+      <label for="select-option">Select option</label>
+      <select name="select-option" id="select-option">
+        <option value="Option-1">Option 1</option>
+        <option value="Option-2">Option 2</option>
+        <option value="Option-3">Option 3</option>
+      </select>
+    </fieldset>
+
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear form">
+
+      <button type="submit">Submit button</button>
+
+    </form>
+<!-- Absolute URL - irrelevant to your current file -->
+    <a href="https://google.com">Absolute URL - google</a>
+
+    <!-- Relative to this file -->
+    <a href="../Lesson2/index.html">Relative URL: Lesson 2 html file</a>
+  </main>
+
+  <footer>Footer</footer>
+  
+</body>
+</html>

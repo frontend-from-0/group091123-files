@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- HTML - Hyper Text Markup Language -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: grey;
+    }
+    span {
+      text-decoration: underline;
+    }
+    /* .class-name {} */
+    .text-blue {
+      color: blue;
+    }
+
+    .font-size-big {
+      /* It's ok to use standard font sizes in the begining. Later we will only use px, rem, em */
+      font-size: larger; 
+    }
+    /* #id-name {} */
+    #heading-important {
+      font-weight: bolder;
+    }
+  </style>
+  <!-- 
+    ./ - current folder
+    ../ - one level up
+    ../../ - two levels up
+   -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- ./new-folder/another-styles.css - relative URL -->
+  <link rel="stylesheet" href="./new-folder/another-styles.css">
+</head>
+<body>
+  <!-- This is a comment in HTML -->
+  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, distinctio totam laboriosam sed iure asperiores molestias praesentium non quia debitis saepe deleniti dignissimos ipsum accusamus sint consequatur perspiciatis labore quis!</p> -->
+  
+
+  <h1 class="text-blue font-size-big">Heading 1</h1>
+  <h7 id="heading-important">Heading 7</h7>
+  <p class="text-blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+  <div>
+    <!-- Inline styles (CSS) - not recommended to use -->
+    <p style="background-color:green; font-size: xx-large;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam cupiditate hic culpa magni voluptates velit quo a illum officia odit! Est a enim ipsa sint voluptatum architecto quaerat maiores magni.</p>
+    <span>Price: </span>
+    <span>$5</span>
+  </div>
+   <!-- src and alt are attributes -->
+   <!-- Img is a self-closing element -->
+  <img src="https://images.unsplash.com/photo-1700135676740-d1325cfe4230?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A picture of a car" />
+  
+</body>
+</html>
