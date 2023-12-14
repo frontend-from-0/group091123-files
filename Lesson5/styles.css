@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+
+  /* Do not add them to * selector!
+  margin: 0;
+  padding: 0; */
+}
+
+body {
+  margin: 0;
+}
+
+.navlist{
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  margin:0 auto; /*Center element horizontally*/
+  padding:0;
+  
+  list-style-type: none;
+}
+
+.navlist > li > a {
+  display: inline-block;
+ min-width:48px;
+ padding:6px 12px;
+ text-decoration: none;
+ color: inherit;
+}
+
+.navlist > li > a:hover {
+  background-color: grey;
+  border-radius: 20px;
+}
+
+main {
+  display: flex;
+}
+
+main > div {
+  height: 100vh;
+}
+
+.content-left {
+  padding-right: 48px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.content-left-inner {
+  width: 500px;
+}
