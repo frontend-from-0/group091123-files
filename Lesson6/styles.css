@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  color: #333;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  /* Add more styling as needed */
+}
+
+/* Change to a class selector instead */
+ul {
+display: flex;
+list-style-type: none;
+gap: 20px;
+padding-left: 0;
+}
+
+
+.nav-link {
+  min-width: 48px;
+  display: inline-block;
+  text-align: center;
+}
+.btn{
+border-radius: 4px;
+min-width:48px;
+}
+.btn-outlined{
+  background-color: white;
+  border:1px solid  #007bff;
+  padding: 6px 12px;
+  color:#007bff;
+  
+}
+
+
+.btn-outlined:hover{
+  background-color: #007bff;
+}
+
+main {
+text-align: center;
+}
+.text-content {
+  max-width: 668px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  height: 1px;
+  width: 60%;
+  margin: 50px auto;
+  /* Change to HEX code */
+  background-color: lightgrey;
+}
