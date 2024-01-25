@@ -1,9 +1,6 @@
 * {
 	box-sizing: border-box;
 }
-:root {
-	--color-green: green;
-}
 
 body {
 	margin: 0;
