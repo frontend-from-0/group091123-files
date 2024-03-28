@@ -1,17 +1,41 @@
+// [1, 'apple', true, null]
+const address = {
+  line1: 'Kungstorget 1',
+  line2: null,
+  city: 'Gothenburg',
+  postalCode: '411 17',
+  country: 'Sweden'
+}; 
+
+console.log(address.country);
+
 // 1. Write a function that takes an array of integers and returns the sum of all elements.
 // Input: [1, 2, 3, 4]
 // Output: 10
 const integersEx1 = [1, 2, 3, 4];
 const integersEx1V2 = [10, 2, 30, 4];
 
+function getSumOfArray (numbers) {
+  // check if numbers is actually an array and only contains numbers
+  let result = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    result += numbers[i];
+  }
+  return result;
+}
 
-console.log("Exercise 1: ");
+console.log("Exercise 1: ", getSumOfArray(integersEx1V2), getSumOfArray(integersEx1), getSumOfArray([10, 10, 10]));
 console.log('----------------------------');
 // 2. Write a function that takes an array of integers and returns the average of all elements.
 //Input: [1, 2, 3, 4]
 // Output: 2.5
+const integersEx2 = [1, 2, 3, 4];
 
-console.log("Exercise 2:");
+ function getAvarege (numbers) {
+  return getSumOfArray(numbers) / numbers.length;
+ }
+
+console.log("Exercise 2:", getAvarege(integersEx2));
 console.log('----------------------------');
 // 3. Write a function that takes an array of strings and concatenates them together adding spaces.
 // Input: ["Hello", "World", "!"]
@@ -43,12 +67,37 @@ console.log('----------------------------');
 // Output: [1, 3, 4]
 const testArrayEx6 = [1, 2, 3, 4, 2];
 
-console.log("exercise 6:");
+/*
+1. write a function with array and values as 2 parameters
+2. create placeholder variable to store new array
+3. loop through every values of array
+4. use if / else condition to find if current value is equal to the value param
+5. return the result
+*/
+function removeValueFromArray(array, valueToRemove){
+  let newArray = [];
+
+  for(let i = 0; i < array.length; i++) {
+    console.log(i, array[i], valueToRemove);
+    if (array[i] !== valueToRemove){
+      console.log('inside if statemnt', i, array[i], valueToRemove);
+      newArray.push(array[i]); 
+      // 'a' !== 'b' => ['a']
+      // 'b' === 'b' => ['a']
+      // 'c' !== 'b' => ['a', 'c']
+    }
+  }
+
+  return newArray;
+}
+
+console.log("exercise 6:",removeValueFromArray(testArrayEx6, 3), removeValueFromArray(['a', 'b', 'c'], 'b'));
 console.log('----------------------------');
 // 7. Write a function that takes an object and returns the keys as an array.
 // Input: {name: "John", age: 30, city: "New York"}
 // Output: ["name", "age", "city"]
-const testObjEx7 = {name: "John", age: 30, city: "New York"};
+const testObjEx7 = {name: "John", age: 30, city: "New York", isStudent: false};
+console.log(Object.keys(testObjEx7));
 
 console.log("exercise 7:");
 console.log('----------------------------');
@@ -57,14 +106,21 @@ console.log('----------------------------');
 // Output: ["John", 30, "New York"]
 const testObjEx8 = {name: "John", age: 30, city: "New York"};
 
-console.log("exercise 8:");
+console.log("exercise 8:", Object.values(testObjEx8));
 console.log('----------------------------');
 // 9. Write a function that takes an object and a key, and returns true if the key exists in the object, otherwise false.
 // Input: ({name: "John", age: 30, city: "New York"}, "age")
 // Output: true
 // Input: ({name: "John", age: 30, city: "New York"}, "surname")
 // Output: false
-const testObjEx9 = {name: "John", age: 30, city: "New York"};
+const testObjEx9 = {name: "John", age: 30, city: "New York", number: undefined};
+
+function ex9 (object, key) {
+  console.log(object[key]);
+}
+
+ex9(testObjEx9, 'age');
+ex9(testObjEx9, 'number');
 
 
 console.log("Ex 9:");
@@ -89,37 +145,3 @@ console.log('----------------------------');
 // Output: {name: "John", age: 30, city: "New York"}
 const array1Ex12 = ["name", "age", "city"];
 const array2Ex12 = ["John", 30, "New York"];
-
-
-// 13. Array Destructuring
-// Given the following array, use array destructuring to assign the values of x, y, and z to their respective variables: 
-const coordinates = [10, 20, 30];
-
-// 14. Object Destructuring
-// Given the following object, use object destructuring to assign the values of name and age to their respective variables:
-const personE14 = {
-  name: 'John Doe',
-  age: 25,
-};
-
-// 15. Array Destructuring with Default Values
-// Given the following array, use array destructuring with default values to assign the values of a, b, and c, with default values of 1, 2, and 3 respectively:
-const numbers = [4];
-
-
-// 16. Object Destructuring with Renaming
-// Given the following object, use object destructuring with renaming to assign the value of name to a variable named fullName:
-const personE16 = {
-  name: 'John Doe',
-};
-
-
-// 17. Nested Object Destructuring
-// Given the following nested object, use object destructuring to assign the values of name, age, and city to their respective variables:
-const personE17 = {
-  name: 'John Doe',
-  age: 25,
-  address: {
-    city: 'New York',
-  },
-};
