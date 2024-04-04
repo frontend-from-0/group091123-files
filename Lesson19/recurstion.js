@@ -23,8 +23,9 @@ function getFactorial(number) {
 		}
 	}
 }
+getFactorial(5);
 /* 
-getFactorial(5)
+// getFactorial(5)
   5 * getFactorial(4)
   5 * 4 * getFactorial(3)
   5 * 4 * 3 * getFactorial(2)
@@ -40,15 +41,66 @@ console.log('String', getFactorial('sadasfasd'));
 // 1. Write a recursive function to print out all the elements of an array.
 const arr = [1, 2, 3, 4, 5];
 
+function printArrayElements(array) {
+	if (array.length === 0) {
+		return;
+		console.log('Array is empty!');
+	} else {
+		console.log(array[0]);
+		const updatedArray = array.slice(1);
+		printArrayElements(updatedArray);
+	}
+}
+printArrayElements(arr);
+
+function printArrayElements(array, index = 0) {
+	if (index === array.length) {
+		return;
+	} else {
+		console.log(array[index]);
+    // I used index++ which is postfix increment meaning that the value was passed to the next recursive call before being incremented. That actually resulted in index value never changing that created an infinite recursion. Changing it to index+1 solves the issue.
+    printArrayElements(array, index+1);
+	}
+}
+printArrayElements(arr);
 
 // 2. Write a recursive function to capitalize the first letter of each word in a sentence.
 const ex2sentence =
 	'a recursive function to capitalize the first letter of each word in a sentence.  ';
 
+function capitalizeWords(sentence) {
+	const words = sentence.trim().split(' '); // [...., 'a', 'sentence.' ]
+	if (sentence.trim().length === 0) {
+		// if (words.length === 0)
+		return '';
+	} else {
+		const firstWord = words[0];
+		console.log(firstWord[0]); // undefined
+		console.log(firstWord[0].toUpperCase(), firstWord.slice(1));
+		const firstWordCapitalized =
+			firstWord[0].toUpperCase() + firstWord.slice(1);
+		const restOfTheSentence = words.slice(1).join(' ');
+		return firstWordCapitalized + ' ' + capitalizeWords(restOfTheSentence);
+	}
+}
+
+console.log(capitalizeWords(ex2sentence));
 
 // 3. Write a recursive function to count the number of vowels in a string.
-const sentenceEx4 = 'Hello, how are you?';
+const sentenceEx4 = 'Hello, how are loretm sadasd you sdas?';
 const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+function countVowels(string) {
+	if (string.length === 0) {
+		return 0;
+	} else {
+		const letter = string[0];
+		if (vowels.includes(letter.toLowerCase())) {
+			return 1 + countVowels(string.slice(1));
+		} else return countVowels(string.slice(1));
+	}
+}
+console.log('Ex 3:', countVowels(sentenceEx4));
 
 // 4. Write a recursive function to remove all occurrences of a specified character from a string.
 const sentenceEx5 = 'Hello, how are you?';
