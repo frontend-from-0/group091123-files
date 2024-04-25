@@ -16,7 +16,7 @@ The `DOM (Document Object Model)` is a programming interface for web documents.
 2. getElementsByClassName - returns a collection of elements that have a specific class name.
 
 ```const elements = document.getElementsByClassName("className");```
-
+const element = document.getElementsByClassName("list-group-item");
 
 3. getElementsByTagName - returns a collection of elements with a specific HTML tag name.
 
