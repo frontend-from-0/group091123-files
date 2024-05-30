@@ -3,12 +3,14 @@
 // Expected output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
 const numbers = [3, 1, 4, 11, 5, 9, 2, 6, 5, 3, 5];
 
+const sortedNumber = [...numbers].sort((a, b) => b - a);
+console.log(sortedNumber);
 
 // Exercise 2: Sorting Strings
 // Sort an array of strings in alphabetical order.
 // Expected output: ["apple", "banana", "grape", "orange", "pear"]
-const fruits = ["banana", "apple", "pear", "orange", "grape"];
-
+const fruits = ["banana", "apple", "Pear", "orange", "grape"];
+console.log([...fruits].map(item => item.toLowerCase()).sort());
 
 // Exercise 3: Descending Order
 // Sort an array of numbers in descending order.

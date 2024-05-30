@@ -102,6 +102,7 @@ console.log(composedFunction(7)); // Output: 14
 
 ```
 const add = (a) => (b) => a + b;
+const add2 = (a,b) => a + b;
 const addFive = add(5);
 
 console.log(addFive(3)); // Output: 8

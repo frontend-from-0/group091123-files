@@ -2,6 +2,10 @@
 // Given an array of numbers, filter out the even numbers.
 const numbersExercise1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+const evenNumbersArray = numbersExercise1.filter(number => number % 2  === 1);
+
+console.log(numbersExercise1, evenNumbersArray);
+
 
 // Exercise 2:
 // Given an array of strings, filter out the strings that contain the letter "a".
@@ -18,6 +22,8 @@ const wordsExercise2 = [
 	'jungle',
 ];
 
+console.log(wordsExercise2.filter(word => !word.includes('a')));
+console.log(wordsExercise2.filter(word => word.indexOf('a') === -1));
 
 // Exercise 3:
 // Given an array of objects representing books, filter out the books with a price less than $10.

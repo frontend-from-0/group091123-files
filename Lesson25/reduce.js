@@ -10,9 +10,42 @@
 */
 
 
+// Reduce with named callback fucntion defined outside of reduce
+// [1, 2, 3, 4, 5].reduce(callback);
+// function callback(accumulator, currentValue, currentIndex, array) {
+//   console.log('accumulator', accumulator);
+//   console.log('currentValue', currentValue);
+//   console.log('currentIndex', currentIndex);
+//   console.log('array', array);
+//   return 'hello world';
+// }
+
+// Reduce with array function syntax
+// [1, 2, 3, 4, 5].reduce((accumulator, currentValue, currentIndex, array) => {
+//   console.log('accumulator', accumulator);
+//   console.log('currentValue', currentValue);
+//   console.log('currentIndex', currentIndex);
+//   console.log('array', array);
+//   return 'hello world';
+// });
+
+// Reduce with anonymus function syntax
+// [1, 2, 3, 4, 5].reduce(function (accumulator, currentValue, currentIndex, array) {
+//   console.log('accumulator', accumulator);
+//   console.log('currentValue', currentValue);
+//   console.log('currentIndex', currentIndex);
+//   console.log('array', array);
+//   return 'hello world';
+// });
+
+
 // Exercise 1:
 // Calculate the sum of all numbers in the given array.
 const numbersEx1 = [1, 2, 3, 4, 5];
+console.log(numbersEx1.reduce((accumulator,currentValue) => {
+  console.log(accumulator,currentValue);
+  return accumulator + currentValue;
+}));
 
 
 // Exercise 2:
