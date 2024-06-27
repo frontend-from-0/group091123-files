@@ -33,12 +33,18 @@ function getPosts() {
 				updateButton.setAttribute('id', 'update-button');
 				updateButton.setAttribute('class', 'button button--success');
 				updateButton.innerText = 'Update post';
-        updateButton.href = `http://127.0.0.1:5502/Lesson27/update/update-post.html?postId=${post.id}`;
+				updateButton.href = `http://127.0.0.1:5501/Lesson28/update/update-post.html?postId=${post.id}`;
+
+				const deleteButton = document.createElement('button');
+				deleteButton.setAttribute('class', 'button button--danger');
+				deleteButton.innerText = 'Delete post';
+				deleteButton.addEventListener('click', () => deletePost(post.id));
 
 				const listItem = document.createElement('li');
 				listItem.append(title);
 				listItem.append(paragraph);
 				listItem.append(updateButton);
+				listItem.append(deleteButton);
 				document.getElementById('posts-list').append(listItem);
 			});
 		});
@@ -49,5 +55,8 @@ function getPostById() {}
 // TODO: move this to the script file attached to the create-post.html page
 function createPost() {}
 
-
-function deletePost() {}
+function deletePost(postId) {
+	fetch(`${URL}/${postId}`, {
+		method: 'DELETE',
+	});
+}
