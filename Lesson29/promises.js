@@ -60,10 +60,46 @@ console.log("Promise created. Waiting for it to resolve or reject...");
 
 
 /* Asyc / await syntax for working with Promises */
+try {
+  const result = async () => await myPromise;
+  console.log(result);
+} catch (error) {
+  console.error(error);
+} finally {
+  console.log('Promise resolved!');
+}
+
 
 // Examples of making a function asyncronous
 // Function declaration
+async function getUserInformation (userId) {
+  // some API request to get user information
+  // Now you can use await key word inside this function!!
+}
+
 // Function expression
+const getUserInformation = async function (userId) {
+  // some API request to get user information
+  // Now you can use await key word inside this function!!
+}
+
 // Arrow function
+const getUserInformation = async (userId) => {
+  // some API request to get user information
+  // Now you can use await key word inside this function!!
+}
+
+
+// Nested function example
+const getUserInformation = async (userId) => {
+  // some API request to get user information
+  // Now you can use await key word inside this function!!
+  const userData = await getUserData();
+  userData.map(async (dataItem) => {
+    console.log('Doing something with the data!');
+    const anotherData = await getAnotherDataAPIRequest();
+  })
+}
+
 
 // Try, catch, finally
