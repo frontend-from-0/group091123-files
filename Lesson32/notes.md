@@ -1,0 +1,1 @@
+Figma file link: https://www.figma.com/design/TktY1f8F29rlne47uLzqR2/frontend-quiz-app?node-id=205-403&m=dev&t=TLdDnaDg8GNR1J47-1

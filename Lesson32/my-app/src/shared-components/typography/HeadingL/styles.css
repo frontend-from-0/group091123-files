@@ -1,0 +1,9 @@
+h2 {
+  font-size: 64px;
+  color: var(--dark-navy);
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 500;
+}
