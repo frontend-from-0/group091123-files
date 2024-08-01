@@ -4,6 +4,10 @@
 
 :root {
   --dark-navy: #313E51;
+  --pure-white: #fff;
+  --light-bluish: #ABC1E1;
+  --light-grey: #F4F6FA;
+  --border-radius: 24px;
 }
 
 body {
@@ -13,4 +17,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-grey);
+  padding: 140px;
+
+}
+
+.app {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 131px;
+  min-height: 100vh;
 }

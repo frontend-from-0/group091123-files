@@ -1,26 +1,31 @@
+import {CodeIcon} from './assets/icons/CodeIcon';
+import {BrushIcon} from './assets/icons/BrushIcon';
+import {JsIcon} from './assets/icons/JsIcon';
+import {HumanIcon} from './assets/icons/HumanIcon';
+
 export const QuizData = [
   {
     categoryName: "HTML",
     id: "192e9168-3256-493a-a6ba-55440f550e10",
-    icon: '',
+    icon: <CodeIcon />,
     questions:[],
   },
   {
     categoryName: "CSS",
     id: "86094fda-da7f-4684-97a3-f1158152e3d9",
-    icon: '',
+    icon: <BrushIcon />,
     questions:[],
   },
   {
     categoryName: "Javascript",
     id: "2e58431b-6f20-4e28-ac27-750730936274",
-    icon: '',
+    icon: <JsIcon />,
     questions:[],
   },
   {
     categoryName: "Accessibility",
     id: "5d21bbcd-f71c-4c0f-b1c3-37c8563116d5",
-    icon: '',
+    icon: <HumanIcon />,
     questions: [
       {
         id: "a5c3ba9c-6a5a-484b-adea-8b833a47fd7f",
@@ -50,8 +55,6 @@ export const QuizData = [
           },
         ]
       }
-      
-
     ]
   }
 ]
