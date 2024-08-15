@@ -1,13 +1,14 @@
-import {useState} from 'react';
-import {todoData} from '../../data';
 import './styles.css';
 
-export const List = () => {
-	const [todos, setTodos] = useState(todoData);
+export const List = ({todos,updateTodos}) => {
 
-	function handleClick (id) {
-		setTodos(prevState => prevState.map(todo => todo.id === id ? {...todo, completed: !todo.completed} : todo));
-	};
+	function handleClick(id) {
+		updateTodos((prevState) =>
+			prevState.map((todo) =>
+				todo.id === id ? { ...todo, completed: !todo.completed } : todo
+			)
+		);
+	}
 
 	return (
 		<ul className='todo__list'>
