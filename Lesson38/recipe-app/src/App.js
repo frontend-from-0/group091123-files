@@ -1,11 +1,14 @@
 import './App.css';
 import { AppRouter } from './AppRouter';
+import { Navbar } from './shared-components/Navbar';
 
 export const App = () => {
 	return (
-		<div className='container'>
-			<header className='header'>Recipe Search App</header>
-			<AppRouter />
-		</div>
+		<>
+			<Navbar />
+			<div className='container'>
+				<AppRouter />
+			</div>
+		</>
 	);
 };

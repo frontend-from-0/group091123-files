@@ -13,7 +13,7 @@ export const SearchBar = () => {
 	async function handleSubmit(e) {
 		e.preventDefault();
 		const recipes = await searchRecipesByName(query);
-		dispatch({type: RECIPE_ACTIONS.update, payload: recipes});
+		dispatch({type: RECIPE_ACTIONS.refresh, payload: recipes});
 	}
 
 	return (
