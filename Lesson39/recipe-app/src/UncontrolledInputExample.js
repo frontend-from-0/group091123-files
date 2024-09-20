@@ -18,6 +18,7 @@ export const UncontrolledInput = () => {
 				type='email'
 				id='email'
 				name='email'
+				// Only used in Uncontrolled inputs
 				defaultValue='anna@gmail.com'
 			/>
 			<input type='submit' value='Update email' />

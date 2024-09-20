@@ -16,15 +16,20 @@ export const UserProvider = ({ children, initialState }) => {
 };
 
 export const UserActionTypes = {
-  login: 'login',
-  logout: 'logout',
-  update: 'update'
+	login: 'login',
+	logout: 'logout',
+	update: 'update',
 };
 
 function userReducer(state, action) {
 	switch (action.type) {
 		case UserActionTypes.login:
-			return { isLoggedInUser: true, ...action.payload };
+			if (
+				action.payload.email === 'johndoe@gmail.com' &&
+				action.payload.password === '12345'
+			) {
+				return { isLoggedInUser: true, email: action.payload.email };
+			} else return { isLoggedInUser: false };
 		case UserActionTypes.logout:
 			return { isLoggedInUser: false };
 		case UserActionTypes.update:

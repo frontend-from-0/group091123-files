@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export const ControlledInput = () => {
-	const [emailInput, setEmailInput] = useState('');
+	const [emailInput, setEmailInput] = useState('anna@gmail.com');
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -17,6 +17,7 @@ export const ControlledInput = () => {
 				type='email'
 				id='email'
 				name='email'
+				// Value and onChange should be used in Controlled inputs
 				value={emailInput}
 				onChange={(e) => setEmailInput(e.target.value)}
 				placeholder='name@gmail.com'

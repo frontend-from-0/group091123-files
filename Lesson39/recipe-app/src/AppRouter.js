@@ -4,6 +4,7 @@ import { SearchBar } from './modules/recipes/SearchBar';
 import { FeaturedRecipes } from './modules/recipes/FeaturedRecipes';
 import { RecipeDetails } from './modules/recipes/RecipeDetails';
 import { ProtectedRoute } from './ProtectedRoute';
+import { Login } from './modules/user/Login';
 /*
 Lesson 38 TODOs:
 1. Add recipes pages routes:
@@ -24,7 +25,7 @@ Lesson 38 TODOs:
 export const AppRouter = () => {
 	return (
 		<Routes>
-			<Route path='/login' element={<h1>Login page placeholder</h1>} />
+			<Route path='/login' element={<Login/>} />
 			<Route
 				path='/user'
 				element={
