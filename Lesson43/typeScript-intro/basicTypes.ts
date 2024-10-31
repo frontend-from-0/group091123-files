@@ -8,6 +8,8 @@ const age: number = 30;
 //The boolean type is for true/false values, just like in JavaScript.
 const isActive: boolean = true;
 
+const missingValue: null = null;
+
 // Arrays can be written in two ways: Type[] or Array<Type>.
 const list: number[] = [1, 2, 3];
 const anotherList: Array<string> = ['1', '2', '3'];

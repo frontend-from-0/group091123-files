@@ -12,6 +12,11 @@ const greet: (name: string) => string = function (name) {
 greet('Jane');
 
 // Function Type with Optional Parameters
+// let logMessage = function (message,userId){
+// 	console.log(`Message: ${message}, User ID: ${userId ?? 'Not provided'}`);
+// };
+
+
 let logMessage: (message: string, userId?: string) => void = function (
 	message: string,
 	userId?: string

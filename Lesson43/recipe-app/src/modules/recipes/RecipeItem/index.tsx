@@ -6,8 +6,13 @@ import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 import { useNavigate } from 'react-router-dom';
+import { Recipe } from '../models/Recipe';
 
-export const RecipeItem = ({recipe}) => {
+interface RecipeItemProps {
+  recipe: Recipe;
+}
+
+export const RecipeItem = ({recipe}: RecipeItemProps) => {
   const navigate = useNavigate();
 
   const handleRecipeClick = () => {
@@ -20,7 +25,7 @@ export const RecipeItem = ({recipe}) => {
         <CardMedia
           component="img"
           height="140"
-          image={recipe.strMealThumb}
+          image={recipe.idMeal}
           alt={recipe.strMeal}
         />
         <CardContent>
