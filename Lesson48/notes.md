@@ -1,0 +1,1 @@
+Demo-app-12-19-24 project was used in this lesson, see here: https://github.com/frontend-from-0/demo-app-12-19-24
