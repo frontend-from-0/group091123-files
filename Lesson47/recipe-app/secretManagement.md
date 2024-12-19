@@ -6,7 +6,7 @@ For managing API keys in your React application created with Create React App (C
 2. Add Environment Variables: Inside this file, you can set your API keys like this:
    `REACT_APP_API_KEY=your_development_api_key_here`
 
-Prefixing with _REACT_APP_ is mandatory for CRA to expose these variables inside your app.
+Prefixing with **REACT_APP** is mandatory for CRA to expose these variables inside your app.
 
 3. Access Environment Variables: In your React code, access the variable using `process.env.REACT_APP_API_KEY`. This value will be replaced appropriately depending on the active .env file when you start your app.
 

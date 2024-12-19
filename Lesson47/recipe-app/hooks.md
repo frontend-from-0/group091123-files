@@ -62,29 +62,33 @@ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 
 `useCallback(fn, deps)` is equivalent to `useMemo(() => fn, deps)`. So, useCallback is specifically for functions, while useMemo can be used for any computationally expensive operation.
 
-
 # New hooks - React v. 19
 
 ## useActionState
+
 Simplifies state management within Actions
 Automatically tracks pending states during an action
 Returns both the final result and a pending status indicator
 
 ## useFormStatus
+
 Provides easy access to parent form information within child components
 Returns an object with properties like pending, data, method, and action
 
 ## useOptimistic
+
 Enables optimistic UI updates
 Allows instant UI updates before server confirmation
 Enhances user experience for actions like "like" buttons or comment systems
 
 ## use
+
 Fetches and utilizes the value of a resource (Promise or context)
 Can be invoked within loops and conditional statements
 Provides flexibility in data fetching and context management
 
 ## useFormState
+
 Manages form input states
 Offers a centralized mechanism to monitor and modify form values
 Allows state updates based on form action outcomes
