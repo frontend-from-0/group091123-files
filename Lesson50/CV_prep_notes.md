@@ -4,6 +4,7 @@
 Length: Aim for 1 page, especially for those with limited experience. If necessary, extend to 2 pages, but ensure every line adds value.
 Layout: Use a clean, professional layout with ample white space. Prioritize readability with clear headings and consistent formatting.
 
+
 2. Strong Personal Statement
 Objective: Begin with a brief personal statement or objective that highlights who you are, your passion for frontend development, and what you aim to contribute.
 Customization: Tailor this section to align with the specific role or company you’re applying to.
@@ -51,7 +52,7 @@ Achievements: Focus on accomplishments rather than just duties. Quantify results
 Responsive Design: Highlight experience with responsive and mobile-first design.
 Version Control: Emphasize proficiency with Git and collaborative workflows.
 CI/CD: Mention familiarity with continuous integration and deployment processes.
-Testing: Include knowledge of frontend testing frameworks (e.g., Jest, Cypress).
+Testing: Include knowledge of frontend testing frameworks (e.g., Jest).
 
 12. Attention to Design and UX/UI
 Design Principles: Show understanding of basic design principles and user experience considerations.
@@ -66,6 +67,10 @@ AI Integration: Demonstrate awareness or experience with integrating AI tools or
 No Errors: Ensure there are no spelling or grammatical mistakes.
 Standard Formatting: Use standard section headings and avoid complex layouts that might confuse ATS.
 File Format: Submit the CV in PDF, unless otherwise specified.
+File Name: make sure that the file name is clear and contain your name and surname, e.g.:
+- JohnDoe_CV.pdf
+- JohnDoe_FrontendDeveloper_CV.pdf
+- JohnDoe_Resume_2025.pdf
 
 15. Seek Feedback
 Seek feedback and use it to continuously improve and refine their resumes.

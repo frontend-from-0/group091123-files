@@ -4,13 +4,14 @@ TypeScript
 TailwindCSS
 React
 JavaScript
-MaterialUI
 Prompt engineering
 AI-automation
+MaterialUI
 Responsive Web Design
 Version Control/Git
 Automated testing
 APIs (and JSON)
+CI/CD
 Web Performance Optimization
 Cross-Browser Development
 State Management (Redux or Context API)
