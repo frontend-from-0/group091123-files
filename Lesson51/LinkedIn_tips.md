@@ -24,15 +24,14 @@ List your technical skills (e.g., React, JS, TypeScript) as well as soft skills.
 - Recommendations
 Personal recommendations are incredibly powerful. Politely ask former managers, colleagues, or your bootcamp students for recommendations that highlight your skills, work ethic, and accomplishments.
 
-- Customize Your Invitations
-When connecting with new people, always add a personalized note to your invitation. It makes a big difference in making your request stand out.
-
 - Education and Certifications
 Highlight your education, and list any certifications that are relevant to your field.
 
 - Be Active
-Regularly update your profile, share interesting articles, comment on posts, and engage with your network. Posting about your own experiences or insights can also help establish your thought leadership in your field.
+Regularly update your profile, share interesting articles, comment on posts, and engage with your network. Posting about your own experiences or insights can also help establish your thought leadership in your field. I use Canva.com to create visual content for Social Media.
 
+- Customize Your Invitations
+When connecting with new people, always add a personalized note to your invitation. It makes a big difference in making your request stand out.
 
 Join Relevant Groups: Participate in LinkedIn groups related to your field. It's a great way to stay informed, contribute to discussions, and network with like-minded professionals.
 

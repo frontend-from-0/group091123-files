@@ -19,7 +19,7 @@ Keep a consistent personal brand across your GitHub and professional network pro
 
 ## Inspiration
 ### Tranding developers
-https://github.com/trending/developers
+[Trending developers](https://github.com/trending/developers)
 
 
 ### Tranding repositiries
