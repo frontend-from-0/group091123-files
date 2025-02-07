@@ -23,3 +23,10 @@ https://gritsearch.com/
 https://www.kickresume.com/pyjama-jobs/
 https://remotemore.com/companies/
 
+
+Git repositories worth checking for job listings:
+https://github.com/remoteintech/remote-jobs
+
+https://github.com/emredurukn/awesome-job-boards
+
+https://github.com/sourceful/jobs
