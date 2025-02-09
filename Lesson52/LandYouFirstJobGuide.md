@@ -60,6 +60,7 @@ https://www.womentech.net/
 - AI-Assisted Job Search: Tools like ChatGPT plugins or specialized job-matching AI:
   - AiApply https://aiapply.co/
   - https://www.kickresume.com
+  - https://wonsulting.ai/
 can parse your resume and match you with relevant postings in real-time. Use these to expedite your search.
 
 - Talent Platforms: Websites that let you create a developer profile and get approached by companies (e.g., Honeypot -> now XING, Toptal for remote/freelance). Entry-level might be tough on some platforms, but some have junior-friendly channels.
