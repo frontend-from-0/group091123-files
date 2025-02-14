@@ -1,1 +1,1 @@
-React Native resources
+CI/CD examples
